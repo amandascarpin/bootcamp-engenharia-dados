@@ -1,0 +1,13 @@
+Description: Criar um bucket no S3
+
+Resources:
+
+  AmandaFirstBucketList:
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketName: bucket-amandascarpin-aula1
+      PublicAccessBlockConfiguration:
+        BlockPublicAcls: True
+        BlockPublicPolicy: True
+        IgnorePublicAcls: True
+        RestrictPublicBuckets: True
